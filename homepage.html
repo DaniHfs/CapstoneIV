@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hobby Showcase Homepage</title>
+    <link rel="stylesheet" href="./scss/homepage.css" type="text/css" />
+
+    <!-- jQuery import -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Navigation bar -->
+    <div class="topNav">
+      <a class="active" href="#home">Home</a>
+      <a href="about.html">About me</a>
+      <a href="savedpage.html">Saved page</a>
+      <a href="index.html">Back to landing page</a>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <h1>My hobbies</h1>
+      <p>
+        I enjoy playing games, and reading books. I want to showcase a few of my
+        favourites.
+      </p>
+
+      <!-- Left side -->
+      <div class="gaming">
+        <h2>
+          <img
+            class="contentImg"
+            src="./Content images/controller.png"
+            alt="A controller"
+          />
+          Favourite games
+        </h2>
+        <p>
+          I use
+          <a href="https://store.steampowered.com/" target="_blank">Steam</a> to
+          organize my games. It's a storefront and library manager.
+        </p>
+
+        <!-- Terraria -->
+        <div class="terraria">
+          <h3>Terraria</h3>
+          <img
+            class="terra_image"
+            src="./Content images/terraria.jpg"
+            alt="Terraria cover"
+          />
+          <div class="terra_text">
+            <p>
+              Released in 2011, Terraria is a 2D sandbox game that revolves
+              around exploration, building, crafting, combat, survival, and
+              mining. It can be played solo or online with others.
+            </p>
+          </div>
+          <button class="saveforlater">Save for later</button>
+          <label class="container"
+            >Favourite?
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+
+        <!-- Devil May Cry 5 -->
+        <div class="dmc5">
+          <h3>Devil May Cry 5</h3>
+
+          <div class="dmc_text">
+            <img
+              class="dmc_image"
+              src="./Content images/dmc5.jpg"
+              alt="DMC 5 cover"
+            />
+            <p>
+              Released in 2019, Devil may Cry 5 follows Dante, Nero, and V, as
+              they attempt to stop the Demon King Urizen from destroying the
+              human world.
+            </p>
+          </div>
+          <button class="saveforlater">Save for later</button>
+          <label class="container"
+            >Favourite?
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Content boxes -->
+      <div class="reasons">
+        <p>
+          I enjoy reading and playing games for the same reasons, those being:
+        </p>
+        <ul>
+          To experience a new world
+        </ul>
+        <ul>
+          To escape from reality for a little while
+        </ul>
+      </div>
+
+      <div class="forms">
+        <!-- Radial button form -->
+        <p>Do you enjoy gaming, reading, or both?</p>
+        <form>
+          <input
+            type="radio"
+            id="gameform"
+            name="fav_language"
+            value="Gaming"
+          />
+          <label for="html">Gaming</label><br />
+          <input
+            type="radio"
+            id="readform"
+            name="fav_language"
+            value="Reading"
+          />
+          <label for="css">Reading</label><br />
+          <input type="radio" id="gameread" name="fav_language" value="Both" />
+          <label for="javascript">Both</label>
+        </form>
+
+        <!-- Submit button form -->
+        <p>Contact me:</p>
+        <form>
+          <label for="cDetails"
+            >Leave your email address at the end of your message</label
+          ><br />
+          <input
+            type="text"
+            id="cDetails"
+            name="cDetails"
+            value="Your message here"
+          /><br />
+          <input type="submit" value="Say 'Hi'" />
+        </form>
+      </div>
+
+      <!-- Right side -->
+      <div class="reading">
+        <h2>
+          <img
+            class="contentImg"
+            src="./Content images/book.jpg"
+            alt="A book"
+          />
+          Favourite books
+        </h2>
+        <p>
+          I either buy my books physically, or use Amazon's
+          <a
+            href="https://www.amazon.com/b?ie=UTF8&node=16571048011"
+            target="_blank"
+            >Kindle</a
+          >
+          app.
+        </p>
+
+        <!-- Dodger -->
+        <div class="dodger">
+          <h3>Dodger - Terry Pratchett</h3>
+
+          <div class="dodger_text">
+            <img
+              class="dodger_image"
+              src="./Content images/dodger.jpg"
+              alt="Dodger cover"
+            />
+            <p>
+              All the poverty stricken people on the streets know him as a
+              friend in times of need. But when he rescues a girl from a beating
+              his life changes dramatically forever... Soon he becomes
+              accidentally famous, discovers a dark plot against him, enters the
+              world of the rich and learns the truth about the girl he rescued.
+            </p>
+          </div>
+          <button class="saveforlater">Save for later</button>
+          <label class="container"
+            >Favourite?
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+
+        <!-- Adventures of Huckleberry Finn -->
+        <div class="huckfinn">
+          <h3>Adventures of Huckleberry Finn - Mark Twain</h3>
+
+          <div class="huck_text">
+            <img
+              class="huck_image"
+              src="./Content images/huckfinn.jpg"
+              alt="Huckleberry Finn cover"
+            />
+            <p>
+              The novel tells the story of Huckleberry Finn's escape from his
+              alcoholic and abusive father, and Huck's adventurous journey down
+              the Mississippi River together with the runaway slave Jim.
+            </p>
+          </div>
+          <button class="saveforlater">Save for later</button>
+          <label class="container"
+            >Favourite?
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- javascript file -->
+    <script src="./js/about.js" type="text/javascript"></script>
+  </body>
+</html>
