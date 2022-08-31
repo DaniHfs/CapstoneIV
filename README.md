@@ -1,2 +1,3 @@
 # CapstoneIV
-The project I did for IFSL1T20
+The project I did for IFSL1T20.
+It is a website describing some of my hobbies.
